@@ -1,0 +1,265 @@
+
+
+body {
+  background-color:#1f1f1f;
+  /*1F1F1F*/
+  /*background-image: url("https://nobel-v1--nobeltruong.repl.co/assets/10.jpg");*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top; 
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*------------------------ header styles ------------------------ */
+h1.ch {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: 49px;
+  line-height: 40px;
+  margin: 10px;
+}
+h2.ch {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: 40px;
+  font-style: italic;
+  margin: 10px;
+}
+
+h1.ch2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: 49px;
+  line-height: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+h2.ch2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: 49px;
+  font-style: italic;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+h3.tn {
+  font-family: 'Cormorant', serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: -3x;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+td.lightNotes {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+a.notes {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ideText {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 18px;
+  padding:14px;
+}
+
+.ideTextNC {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  font-size: 18px;
+  padding:14px;
+}
+
+ul.ideTextNC{
+  list-style-type: none;
+}
+/* ------------------------ containers -------------------------*/
+.container {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  left: 0;
+}
+
+.halfToc {
+  width: 45%;
+  vertical-align: top;
+  display: inline-block;
+  padding-right:5%;
+  padding-bottom: 3%;
+}
+
+.halfNav {
+  width: 100%;
+  display: inline-block;
+  padding-bottom:3%;
+}
+
+.notes {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: top;
+  padding-left: 13%;
+  padding-right: 10%;
+}
+
+.regularHeader {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  vertical-align: top;
+  margin-left: 6.5%;
+}
+
+.slides {
+  padding-left: 13%;
+  padding-right: 10%;
+}
+
+.regularHeader {
+  padding-left: 0;
+}
+
+table.topNav {
+  width: 40%;
+}
+
+.tableOfContents {
+  position: absolute;
+  text-align: center;
+  width: 75%;
+  right: 0;
+}
+
+.copy {
+  font-family: 'Cormorant', serif;
+  font-size: 20px;
+  font-weight:300;
+  padding-bottom:10%;
+  padding-right:8%;
+}
+
+.leftNav {
+  padding-top: 12px;
+  text-align: center;
+  font-family: 'Cormorant', serif;
+  font-size: 18px;
+  position: absolute;
+  left: 5%;
+  width: 25%;
+}
+
+.leftContent{
+  position: absolute;
+  width: 50%;
+  left: 0;
+}
+
+.rightContent{
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    top: 1%;
+    display: flex; flex-flow: column; 
+  }
+
+  .regularHeader {
+    display:none;
+  }
+
+  .leftNav{
+    width:100%;
+    left:0;
+    position:relative;
+  }
+
+  .tableOfContents{
+    width: 100%;
+    position: relative;
+  }
+
+  .halfToc {
+    width: 90%;
+    padding: 4%;
+    padding-bottom: 2%;
+  }
+
+  .halfNav {
+    width: 100%;
+    padding-bottom:0;
+  }
+
+  .leftContent {
+    position:relative;
+    padding-left: 0;
+    width:100%;
+    order: 4;
+  }
+
+  .rightContent{
+    position: relative;
+    width:100%;
+    padding: 4%;
+    right: 0%;
+    order: 3;
+  }
+
+  .notes {
+    padding-top:4%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom:100px;
+  }
+
+  .slides {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  table.topNav {
+    width: 100%;
+  }
+
+  .copy {
+    padding-bottom:0%;
+    padding-right:0%;
+  }
+
+  .slideWrap {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .slideWrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
